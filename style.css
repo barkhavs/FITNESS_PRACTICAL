@@ -1,0 +1,197 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f8f3;
+    color: #26352b;
+}
+
+header {
+    background-color: #174d36;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+nav {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+nav a {
+    text-decoration: none;
+    color: #174d36;
+    font-weight: bold;
+    margin: 0 14px;
+}
+
+nav a:hover {
+    color: #79a94b;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 45px 8%;
+    background-color: #e5efdf;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.tagline {
+    color: #39764c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 12px 0;
+    color: #174d36;
+}
+
+.hero-text > p:not(.tagline) {
+    line-height: 1.8;
+}
+
+.hero img {
+    width: 48%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #287447;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background-color: #174d36;
+}
+
+.benefits {
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.benefits h2,
+.tips h2 {
+    color: #174d36;
+}
+
+.section-text {
+    color: #68756a;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    padding: 22px 16px;
+    border-radius: 10px;
+    border: 1px solid #e0e9dc;
+    box-shadow: 0 4px 12px #00000008;
+}
+
+.card h3 {
+    color: #287447;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.tips {
+    background-color: #e5efdf;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+#tip {
+    line-height: 1.7;
+    margin: 20px auto;
+}
+
+button {
+    background-color: #287447;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #174d36;
+}
+
+footer {
+    background-color: #174d36;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px 6%;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+}
